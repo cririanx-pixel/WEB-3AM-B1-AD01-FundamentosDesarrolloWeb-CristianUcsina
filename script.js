@@ -5,7 +5,6 @@ const USUARIOS = [
     { usuario: "inactivo", password: "inactivo123", nombre: "Cuenta Vieja",  rol: "cliente",       telefono: "0911111111", email: "vieja@mail.com",   habilitado: false }
 ];
 
-/* ==================== MÓDULO 2: ARRAY DE OBJETOS (solicitudes) ==================== */
 
 const ESTADOS = ["Pendiente", "En revisión", "En proceso", "Finalizado", "Cancelado"];
 
