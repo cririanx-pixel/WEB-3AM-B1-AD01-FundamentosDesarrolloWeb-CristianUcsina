@@ -2,7 +2,7 @@ const USUARIOS = [
     { usuario: "cliente1", password: "cliente123",  nombre: "Juan Pérez",    rol: "cliente",       telefono: "0991234567", email: "juan@mail.com",    habilitado: true  },
     { usuario: "cliente2", password: "cliente123",  nombre: "María López",   rol: "cliente",       telefono: "0987654321", email: "maria@mail.com",   habilitado: true  },
     { usuario: "admin",    password: "admin123",    nombre: "Administrador", rol: "administrador", telefono: "0999999999", email: "admin@taller.com", habilitado: true  },
-    { usuario: "inactivo", password: "inactivo123", nombre: "Cuenta Vieja",  rol: "cliente",       telefono: "0911111111", email: "vieja@mail.com",   habilitado: false }
+    { usuario: "inactivo", password: "inactivo123", nombre: "No se que poner",  rol: "cliente",       telefono: "0911111111", email: "vieja@mail.com",   habilitado: false }
 ];
 
 
@@ -182,6 +182,7 @@ formularioLogin.addEventListener("submit", function (evento) {
     const usuarioIngresado = document.getElementById("usuario").value.trim().toLowerCase();
     const passwordIngresada = document.getElementById("password").value;
 
+    console.log(usuarioIngresado, passwordIngresada, USUARIOS);
     const encontrado = USUARIOS.find(function (u) {
         return u.usuario.toLowerCase() === usuarioIngresado;
     });
