@@ -1,0 +1,380 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #111827, #7f1d1d, #f59e0b);
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===================== HEADER Y NAVEGACIÓN ===================== */
+
+header{
+    background-color: #111827;
+    padding: 15px 20px;
+}
+
+.barra-navegacion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.logo{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.enlaces-nav{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.enlaces-nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.enlaces-nav a:hover{
+    text-decoration: underline;
+}
+
+/* ===================== MAIN ===================== */
+
+main{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px 15px;
+}
+
+.contenedor{
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 420px;
+    max-width: 85%;
+    box-shadow: 0 10px 30px rgb(30, 30, 47);
+}
+
+/* Contenedor más ancho para tablas */
+.contenedor.ancho{
+    width: 950px;
+}
+
+h1{
+    text-align: center;
+    color: rgb(127, 29, 29);
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+h3{
+    margin-top: 15px;
+    margin-bottom: 6px;
+    color: rgba(44, 52, 60, 0.9);
+    font-size: 15px;
+}
+
+.subtitulos{ 
+    text-align: center;
+    color: dimgray;
+    margin-bottom: 25px;
+}
+
+.texto-normal{
+    color: rgba(44, 52, 60, 0.9);
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.lista-beneficios p{
+    margin: 8px 0;
+    color: rgba(44, 52, 60, 0.9);
+}
+
+label{
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: rgba(44, 52, 60, 0.764);
+}
+
+/* Aplicamos el 100% de ancho solo a los campos de entrada */
+input[type="text"], 
+input[type="email"], 
+input[type="tel"], 
+input[type="number"], 
+input[type="password"], 
+input[type="date"], 
+input[type="time"], 
+select,
+textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid rgb(193, 151, 151);
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+textarea{
+    resize: vertical;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input:focus, select:focus, textarea:focus{
+    outline: none;
+    border-color: rgb(127, 29, 29);
+}
+
+/* Estilos para los grupos de Radio Buttons y Checkboxes */
+.grupo-opciones{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.grupo-opciones label{
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: normal;
+    cursor: pointer;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Ajuste específico para que los radios y checkboxes no midan el 100% */
+input[type="radio"], 
+input[type="checkbox"] {
+    width: auto;
+    cursor: pointer;
+}
+
+.detalle{
+    color: rgb(127, 29, 29);
+    font-size: 13px;
+    margin-top: 12px;
+}
+
+.botones{
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+button{
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-enviar{
+    background-color: rgb(185, 28, 28);
+}
+
+.btn-limpiar{
+    background-color: rgba(51, 29, 29, 0.911);
+}
+
+.btn-cancelar{
+    background-color: rgb(107, 114, 128);
+}
+
+.btn-editar{
+    background-color: rgb(217, 119, 6);
+    flex: none;
+    padding: 6px 10px;
+    font-size: 12px;
+}
+
+.btn-eliminar{
+    background-color: rgb(185, 28, 28);
+    flex: none;
+    padding: 6px 10px;
+    font-size: 12px;
+}
+
+.btn-enviar:hover{
+    background-color: rgb(153, 27, 27);
+}
+
+.btn-limpiar:hover{
+    background-color: rgba(34, 16, 16, 0.881);
+}
+
+.btn-cancelar:hover{
+    background-color: rgb(75, 85, 99);
+}
+
+.btn-editar:hover{
+    background-color: rgb(180, 83, 9);
+}
+
+.btn-eliminar:hover{
+    background-color: rgb(153, 27, 27);
+}
+
+/* ===================== ESTADÍSTICAS DEL INICIO ===================== */
+
+.estadisticas{
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.caja-estadistica{
+    flex: 1;
+    background-color: #fef2f2;
+    border: 1px solid #fecaca;
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px;
+}
+
+.caja-estadistica h3{
+    margin: 0;
+    color: rgb(127, 29, 29);
+    font-size: 16px;
+}
+
+.caja-estadistica p{
+    margin: 5px 0 0;
+    color: dimgray;
+    font-size: 12px;
+}
+
+/* ===================== CATÁLOGO DE SERVICIOS ===================== */
+
+.catalogo{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.tarjeta-servicio{
+    background-color: #fef2f2;
+    border: 1px solid #fecaca;
+    border-radius: 8px;
+    padding: 12px;
+    text-align: center;
+}
+
+.tarjeta-servicio .icono{
+    font-size: 2rem;
+}
+
+.tarjeta-servicio h4{
+    margin: 6px 0;
+    color: rgb(127, 29, 29);
+    font-size: 15px;
+}
+
+.tarjeta-servicio p{
+    margin: 4px 0;
+    color: dimgray;
+    font-size: 13px;
+}
+
+.tarjeta-servicio .precio{
+    display: inline-block;
+    margin-top: 6px;
+    background-color: rgb(185, 28, 28);
+    color: white;
+    padding: 3px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+/* ===================== TABLAS ===================== */
+
+.tabla{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+.tabla th{
+    background-color: #111827;
+    color: white;
+    padding: 10px 8px;
+    text-align: left;
+}
+
+.tabla td{
+    padding: 10px 8px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.tabla tr:hover{
+    background-color: #fef2f2;
+}
+
+.tabla select{
+    padding: 5px;
+    font-size: 12px;
+}
+
+/* Insignias de estado */
+.badge-pendiente   { background-color: #6b7280; color: white; padding: 3px 8px; border-radius: 10px; font-size: 11px; }
+.badge-revision    { background-color: #2563eb; color: white; padding: 3px 8px; border-radius: 10px; font-size: 11px; }
+.badge-proceso     { background-color: #d97706; color: white; padding: 3px 8px; border-radius: 10px; font-size: 11px; }
+.badge-finalizado  { background-color: #16a34a; color: white; padding: 3px 8px; border-radius: 10px; font-size: 11px; }
+.badge-cancelado   { background-color: #111827; color: white; padding: 3px 8px; border-radius: 10px; font-size: 11px; }
+
+/* ===================== RESULTADO Y PERFIL ===================== */
+
+.resultado {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #f0fdf4;
+    border: 1px solid #22c55e;
+    border-radius: 6px;
+    color: #166534;
+}
+
+.resultado h2{
+    font-size: 16px;
+    margin-top: 0;
+    color: #15803d;
+}
+
+#datosPerfil p{
+    margin: 8px 0;
+    color: rgba(44, 52, 60, 0.9);
+}
+
+/* ===================== FOOTER ===================== */
+
+footer{
+    background-color: #111827;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-size: 13px;
+}
+
+/* ===================== OCULTAR ELEMENTOS ===================== */
+
+.oculto{
+    display: none !important;
+}
