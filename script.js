@@ -1,14 +1,3 @@
-/* ==========================================================================
-   AD01 - Fundamentos de Desarrollo Web
-   Taller Cordillera - Sistema de Mantenimiento Automotriz
-   Módulo 1: Página institucional
-   Módulo 2: Solicitud de mantenimiento (array de objetos)
-   Módulo 3: Login, roles y CRUD
-   PRFUEBVASSAADADASDADADASD
-   ========================================================================== */
-
-/* ==================== MÓDULO 3: USUARIOS Y ROLES ==================== */
-
 const USUARIOS = [
     { usuario: "cliente1", password: "cliente123",  nombre: "Juan Pérez",    rol: "cliente",       telefono: "0991234567", email: "juan@mail.com",    habilitado: true  },
     { usuario: "cliente2", password: "cliente123",  nombre: "María López",   rol: "cliente",       telefono: "0987654321", email: "maria@mail.com",   habilitado: true  },
